@@ -1,0 +1,30 @@
+/* themes.css */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #111111;
+    --text-muted: #666666;
+    --border-color: #dddddd;
+    --input-bg: #f9f9f9;
+    --hover-bg: #f0f0f0;
+    
+    /* Health score accent palette (Light Mode) */
+    --accent-relevance: #7a8b99;
+    --accent-popularity: #d4a373;
+    --accent-maintenance: #6d9e9e;
+    --accent-devops: #d98880;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #eeeeee;
+    --text-muted: #aaaaaa;
+    --border-color: #333333;
+    --input-bg: #1e1e1e;
+    --hover-bg: #2a2a2a;
+    
+    /* Health score accent palette (Dark Mode) */
+    --accent-relevance: #99aab8; 
+    --accent-popularity: #e5b98f; 
+    --accent-maintenance: #8abfbf; 
+    --accent-devops: #eaa49d; 
+}

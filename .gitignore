@@ -1,0 +1,4 @@
+build/
+backend/build/
+backend/data/
+.env

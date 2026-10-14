@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFinder</title>
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/base.css?v=20261003d">
+</head>
+<body>
+    <header class="top-bar">
+        <h1>DevFinder</h1>
+        <button id="themeToggle" class="theme-btn">Toggle Theme</button>
+    </header>
+    
+    <main>
+        <p class="site-overview">DevFinder ranks open-source repositories by relevance, popularity, maintenance activity, and production-readiness — not just star count. The score reflects how well a project matches your query and how actively it is kept alive.</p>
+        <div class="search-container">
+            <div class="search-input-wrapper">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" id="searchInput" placeholder="Search repositories..." autocomplete="off">
+                <ul id="autocompleteList" class="autocomplete-dropdown hidden"></ul>
+            </div>
+            
+            <div class="filters-row">
+                <label class="filter-label">
+                    Language:
+                    <div class="search-input-wrapper filter-input-wrapper">
+                        <input type="text" id="filterLanguage" placeholder="e.g. go" autocomplete="off">
+                        <ul id="languageAutocompleteList" class="autocomplete-dropdown hidden"></ul>
+                    </div>
+                </label>
+                <label>
+                    Min Stars:
+                    <input type="number" id="filterStars" placeholder="e.g. 1000">
+                </label>
+                <label>
+                    <input type="checkbox" id="filterDocker"> Has Docker
+                </label>
+            </div>
+            
+            <button id="searchBtn" class="search-btn">Search</button>
+        </div>
+
+        <div id="resultsContainer" class="results-list">
+            <!-- Results injected here -->
+        </div>
+    </main>
+
+    <script src="js/theme.js"></script>
+    <script src="js/app.js?v=20261003d"></script>
+</body>
+</html>

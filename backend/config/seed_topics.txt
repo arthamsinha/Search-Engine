@@ -1,0 +1,42 @@
+# DevFinder ingestion seed topics.
+# One GitHub topic per line; '#' starts a comment. Edit freely -- no recompilation needed.
+# Used by:  devfinder fetch-all [max_per_topic] [seed_file]
+
+# --- Common project categories ---------------------------------------------
+portfolio
+portfolio-website
+inventory-management
+inventory-system
+todo-app
+task-manager
+chat-app
+e-commerce
+blog
+cms
+dashboard
+expense-tracker
+library-management
+hotel-booking
+student-management-system
+
+# --- Popular languages -----------------------------------------------------
+python
+javascript
+typescript
+go
+java
+cpp
+rust
+
+# --- Popular frameworks / stacks -------------------------------------------
+react
+nodejs
+django
+spring-boot
+flask
+nextjs
+
+# --- DevOps / infrastructure (original topics, keep) -----------------------
+docker
+kubernetes
+ci-cd
